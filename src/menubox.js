@@ -34,7 +34,7 @@
          }
 
          function show(div){
-           $(div).show().fadeIn(5);
+           $(div).fadeIn(500);
            showOverlay(div); 
          }
 
@@ -45,10 +45,10 @@
 
          function showOverlay(div) { 
            if ($('#menu_overlay').length == 0) $("body").append('<div id="menu_overlay" style="position:fixed;top:0px;left:0px;height:100%;width:100%"></div>');
-           $('#menu_overlay').hide().click(function() { 
-               $(div).hide(); 
-               $("#menu_overlay").remove();
-               }).fadeIn(5);
+           $('#menu_overlay').click(function() { 
+               	$(div).fadeOut(500); 
+               	$("#menu_overlay").remove();
+               })
          }
 
           function hideOverlay() { 
