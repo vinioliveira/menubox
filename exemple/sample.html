@@ -3,15 +3,51 @@
   <head>
     <script src="../lib/jquery.js" type="text/javascript"></script> 
     <script src="../src/menubox.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+	      $(document).ready(function(){ 
+        	$('#link').menubox('#menuPopup') 
+	      });
+   </script>
   </head>
   <body>
-    <a href="#" id="link">show menu popup</a>
-    <div id="menuPopup">this is a menu popup</div>
-    <script>
-      $(document).ready(function(){ 
-        $('#link').menubox('#menuPopup') 
-      });
-    </script>
+    <div id="container">
+	<div id="menu">
+			<ul>
+				<li><a href="#" id="link" class="active">show menu popup</a></li>
+			</ul>	   
+		        
+	
+	</div>
+	<div id="menuPopup">
+		<div class="triangle"></div>
+		<div class="overlay">
+			<div class="content">
+				<div class="sub-division">
+				<h2>Primeira Info </h2> 
+				<ul>
+					<li><a href="#"> this is a menu popup </a></li>
+					<li><a href="#"> this is a menu popup </a></li>
+					<li><a href="#"> this is a menu popup </a></li>
+					<li><a href="#"> this is a menu popup </a></li>
+
+				</ul>
+				</div>
+				<div class="sub-division">
+				<h2>Segunda Info </h2>
+				<ul>
+					<li><a href="#"> this is a menu popup </a></li>
+					<li><a href="#"> this is a menu popup </a></li>
+					<li><a href="#"> this is a menu popup </a></li>
+					<li><a href="#"> this is a menu popup </a></li>
+
+				</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+    </div>
   </body>
 </html>
